@@ -1,0 +1,228 @@
+body {
+  background-image: url(http://us.battle.net/forums/static/images/backgrounds/background-overwatch-top.jpg);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;}
+.flash {
+    letter-spacing: 2px;
+    font-family: "BigNoodleTitling";
+   animation-name: flash;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+@keyframes flash {
+    from {color: white;}
+    to {color: black;}
+}
+
+#over{
+  max-width: 100%;
+    height: auto;
+
+
+}
+
+p {
+    font-family: "BigNoodleTitling";
+    font-size: 200%;
+    color: white;
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+}
+
+.modal-body{ 
+  background: url("https://i.ytimg.com/vi/vtWTx20Lu-E/maxresdefault.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+
+}
+
+li{
+    color: orange;
+    font-family: "BigNoodleTitling";
+    font-size: 150%;
+}
+
+h5{
+    font-size: 200%;
+}
+
+h2#stats_name{
+    color:orange;
+    font-family: "BigNoodleTitling";
+    letter-spacing: 3px;
+
+}
+
+div.modal-content{
+background: url("https://i.ytimg.com/vi/vtWTx20Lu-E/maxresdefault.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+h5#stats_armour{
+     color: white;
+    font-family: "BigNoodleTitling";
+    font-size: 150%;
+    
+}
+h5#stats_shield{
+     color: white;
+    font-family: "BigNoodleTitling";
+    font-size: 150%;
+}
+h5#stats_difficulty{
+     color: white;
+    font-family: "BigNoodleTitling";
+    font-size: 150%;
+}
+
+h5#stats_health{
+     color: white;
+    font-family: "BigNoodleTitling";
+    font-size: 150%;
+}
+
+h1{
+    color: white;
+    font-family: "BigNoodleTitling";
+}
+
+.img-responsive{
+    
+    opacity:.7;
+    transition: opacity .5s;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 8em */
+}
+.img-responsive:hover{
+    opacity: 1;
+
+}
+@media (max-width: 600px) {
+  .facet_sidebar {
+    display: none;
+  }
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #a6827e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a6827e;
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background-color:transparent;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+}
+.myButton:hover {
+	background-color:transparent;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+#GAME1 {
+    overflow: hidden;
+ background-image: url(https://s-media-cache-ak0.pinimg.com/originals/3b/3c/19/3b3c19b32192b715cced019e2f0b1585.gif 
+);
+background-repeat: no-repeat;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+}
+/*http://orig04.deviantart.net/10fd/f/2016/171/c/a/gif__10__by_hintoncole-da6y8bz.gif*/
+
+.pharah {
+     
+    height: 230px;
+    width: 230px;
+    position: absolute;
+    left: 1.5px;
+    top: 85px;
+    z-index: 1;
+}
+
+.cloud {
+    position: absolute;
+    height: 20vh;
+    width: 25vw;
+    left: 70vw;
+    top: 10vh;
+    /*// top: 10px;*/
+    z-index: 2;
+}
+
+.full {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.arrow {
+    position: absolute;
+    height: 10vh;
+    left: 78vw;
+    top: 12vw;
+    display: none;
+    z-index: 4;
+}
+
+.start {
+    position: absolute;
+    left: 40vw;
+    top: 50vh;
+    height: 10vh;
+    width: 20vw;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #888888 ;
+}
+.stop {
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+}
+ .display {
+    right: 10px;
+    position: absolute;
+    color: white;
+    font-family: "BigNoodleTitling";
+    font-size: 40px;
+} 
+
+p.score {
+    right: 10px;
+    position: absolute;
+    color: white;
+    font-family: "BigNoodleTitling";
+    font-size: 40px;
+    
+}

@@ -1,0 +1,537 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/gif/png" href="https://cdn2.iconfinder.com/data/icons/overwatch-players-icons/512/Overwatch-512.png">
+    <title>OverStats</title>
+    <title><img src="https://cdn2.iconfinder.com/data/icons/overwatch-players-icons/512/Overwatch-512.png"></img>Webnet</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" media="(max-width: 800px)" href="lol.css" /> -->
+    <!--goodle oAuth ish  -->
+
+    <!--Reference platform.js library here-->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>>
+    <!--Reference Client ID in meta tag here-->
+
+
+    <meta name="google-signin-client_id" content="792792883032-ug9c8h1mp2t9683l5ogojhq8hq4k7l58.apps.googleusercontent.com">
+    <!--jquery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+<header></header>
+
+<body>
+
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+
+
+
+                <a href="#forum" ><button class="btn btn-warning navbar-btn"  >Forum</button>
+                </a>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ROLES <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#OFFENSE">OFFENSE</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#DEFENSE">DEFENSE</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#TANK">TANK</a>
+                            </li>
+                            <li role="separator" class="divider"></li>
+                            <li>
+                                <a href="#SUPPORT">SUPPORT</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">GAMES <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#GAME1" class="portfolio-link" data-toggle="modal">GAME 1</a>
+                            </li>
+                            <!-- <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <ul>
+        <div class="signs">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <a href="#" class="signOut" onclick="onSignOut();">Sign out</a>
+        </div>
+    </ul>
+
+
+    <!-- Portfolio Grid Section -->
+
+    <section id="portfolio">
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div ID="OFFENSE" class="col-sm-12 text-center">
+                        <center><img ID="over" src="http://i.imgur.com/IF0dVuY.png">
+                            <center>
+                    </div>
+                    <div class="col-lg-12 text-center">
+                        <h1 class="flash">Click on a hero to display their stats!</h1>
+                        <hr class="star-primary">
+                    </div>
+                    <divclass="col-lg-12 text-center">
+                        <center><img src="https://vignette1.wikia.nocookie.net/overwatch/images/1/14/OffenseIcon.png/revision/latest?cb=20160625040759">
+                            <center>
+                                <font size="3" face="BigNoodleTitling" color="white">
+                                    <h1>Offense</h1>
+                                </font>
+
+                </div>
+            </div>
+            <div ID="DEFENSE" class="row">
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(3)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Genji-cd8f098042b63720892072ae0bc454fd136e2db77b2f9bcee7e20315237dc3d3.png"
+                            class="img-responsive" alt="Genji">
+                    </a>
+                </div>
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(7)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/McCree-253c51e55ea60c37ddc3080361ea30cf57102d42662ea134ae11f5ce4e44016b.png"
+                            class="img-responsive" alt="McCree">
+                    </a>
+                </div>
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(10)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Pharah-1c545c0aecf7825be1c2f027cedae7016ec6d89cb002bd933db5edd80120928c.png"
+                            class="img-responsive" alt="Pharah">
+                    </a>
+                </div>
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(11)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Reaper-6eceef3ef3677eaa6e93a2e37e60993db16d3c4bf3c5fc34efb0b03067634eb7.png"
+                            class="img-responsive" alt="Reaper">
+                    </a>
+                </div>
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(14)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Soldier76-a01c264e84a51f69eff74ca8748c1c40940b5f1c9f3b84903281e1de37325cba.png"
+                            class="img-responsive" alt="Soldier: 76">
+                    </a>
+                </div>
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(17)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Tracer-eea1f339f16fe74dd4e9f9086e32d2241723f8e530fedac8c3948ae4c091f352.png"
+                            class="img-responsive" alt="Tracer">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <hr class="star-primary">
+                    <center><img src="https://vignette2.wikia.nocookie.net/overwatch/images/6/61/DefenseIcon.png/revision/latest?cb=20160625041427">
+                        <center>
+                            <font face="BigNoodleTitling" color="white">
+                                <h1>Defense</h1>
+                            </font>
+
+                </div>
+            </div>
+            <!--Row 2-->
+
+
+            <div ID="DEFENSE" class="row">
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(1)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Bastion-8edfb0a5ddb59278dc83f330c19af38f23a1c94e6ea402ddaf539ded6eb3e7fa.png"
+                            class="img-responsive" alt="Bastion">
+                    </a>
+                </div>
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(4)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Hanzo-acb5afd685bac0b5439ca4e6aa18b35ee1e653fdcf48e4895c4ed6e74e9705bb.png"
+                            class="img-responsive" alt="Hanzo">
+                    </a>
+                </div>
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(5)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Junkrat-dc4b9b6263b8b714ed44dc5da27429a774c3d95aa3b4b722a3195edf86e921b5.png"
+                            class="img-responsive" alt="Junkrat">
+                    </a>
+                </div>
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(8)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Mei-64b7be45e14f9a87c0202d90a8d9723336fa5329ce13bd007dff75a4f05fdd0f.png"
+                            class="img-responsive" alt="Mei">
+                    </a>
+                </div>
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(16)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Torbjorn-4c26a644de86014da01d310ff022fe3c2e925c547f96de53620a2eeca07018f9.png"
+                            class="img-responsive" alt="Torbjorn">
+                    </a>
+                </div>
+                <div class="col-lg-2 portfolio-item">
+                    <a href="#portfolioModal" onclick="changeHero(18)" class="portfolio-link" data-toggle="modal">
+                        <div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://www.overwatch-tips.com/assets/characters/Widowmaker-2749c1dc3104ab9944162578432fc54b7b15fa9514b590c8613b12ee02e03862.png"
+                            class="img-responsive" alt="Widowmaker">
+                    </a>
+                </div>
+
+                <div ID="TANK" class="row">
+                    <div class="col-lg-12 text-center">
+                        <hr class="star-primary">
+                        <center><img src="https://vignette3.wikia.nocookie.net/overwatch/images/6/69/TankIcon.png/revision/latest?cb=20160625041805">
+                            <center>
+                                <font face="BigNoodleTitling" color="white">
+                                    <h1>Tank</h1>
+                                </font>
+
+                    </div>
+                </div>
+                <!--Row 3-->
+
+
+                <div class="row">
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(2)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www.overwatch-tips.com/assets/characters/DVa-9d41c70fa3c4960f1f0ce49343384d0484f0274b1a2146e981b53ac406c546f0.png"
+                                class="img-responsive" alt="DVA">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(12)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www.overwatch-tips.com/assets/characters/Reinhardt-8935aed9bddbd02dbcd6b816aa7fa0084ca802ff3bfcbfc28e26b8ebcd645f34.png"
+                                class="img-responsive" alt="Reinhardt">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(13)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www.overwatch-tips.com/assets/characters/Roadhog-c209c0806021c6c29ca689d6e07d899afc6826f0808835a2d9be41b87566fbd4.png"
+                                class="img-responsive" alt="Roadhog">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(19)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www.overwatch-tips.com/assets/characters/Winston-65c97c10213b8d35fe0fdb2a64fd335d2b5b9ce58e7b1abcf3e5a478280d070e.png"
+                                class="img-responsive" alt="Winston">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(20)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www.overwatch-tips.com/assets/characters/Zarya-68a1ac7d076365d1beaefd94856d05ec1f1f0ad3e7f1682f295abf01d90b191a.png"
+                                class="img-responsive" alt="Zarya">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <hr class="star-primary">
+                        <center><img src="https://vignette3.wikia.nocookie.net/overwatch/images/5/5f/SupportIcon.png/revision/latest?cb=20160625042024">
+                            <center>
+                                <font face="BigNoodleTitling" color="white">
+                                    <h1>Support</h1>
+                                </font>
+
+                    </div>
+                </div>
+                <!--Row 4-->
+                <div ID="SUPPORT" class="row">
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(0)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www.overwatch-tips.com/assets/characters/Ana-e7c4d3d00e1388550f40aa0a3aa95033efd034291c0c5b673fcd0d7831b22fe8.png"
+                                class="img-responsive" alt="Ana">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(6)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www.overwatch-tips.com/assets/characters/Lucio-75eb0fe0370dd3546449ae8c488ccd115a0378647824ecb251acfb3439c2c96e.png"
+                                class="img-responsive" alt="Lucio">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(9)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www.overwatch-tips.com/assets/characters/Mercy-3bc9aec6266be69987d71e993db2d258282dad838259586eb536e545de482825.png"
+                                class="img-responsive" alt="Mercy">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(15)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www.overwatch-tips.com/assets/characters/Symmetra-ead16023b3d16fb399fbcefd5f94d4ecf5f670975d92d558be33bf8212f34a2e.png"
+                                class="img-responsive" alt="Symmetra">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(21)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www.overwatch-tips.com/assets/characters/Zenyatta-ecb5dfc3d37dba7c5181d00cb3f46e77c8fa0fb7c2e55c1228ef2e57404d2a42.png"
+                                class="img-responsive" alt="Zenyatta">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 portfolio-item">
+                        <a href="#portfolioModal" onclick="changeHero(21)" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="http://www168.lunapic.com/editor/working/150220774840699?1435211231" class="img-responsive" alt="Zenyatta">
+                        </a>
+                    </div>
+
+                </div>
+                <div style="padding-bottom:50px"></div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2 id="stats_name">Project Title</h2>
+                            <hr class="star-primary">
+                            <div style="width:100%;height:0;padding-bottom:56%;position:relative;">
+                                <iframe id="stats_picture" src="https://giphy.com/embed/l0FecENpO21Syicfu" width="100%" height="100%" style="position:absolute"
+                                    frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                            </div>
+                            <p><a href="https://giphy.com/gifs/video-game-overwatch-l0FecENpO21Syicfu">via GIPHY</a></p>
+                            <p id="stats_description"> </p>
+
+                            <ul class="list-inline item-details">
+                                <li>Health:
+                                    <h5 id="stats_health"></h5>
+                                </li>
+                                <li>Armour:
+                                    <h5 id="stats_armour"></h5>
+                                </li>
+                                <li>Shield:
+                                    <h5 id="stats_shield"></h5>
+                                </li>
+                                <li>Difficulty:
+                                    <h5 id="stats_difficulty"></h5>
+                                </li>
+                            </ul>
+                            <center><button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button></center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio-modal modal fade" id="GAME1" tabindex="-1" role="dialog" aria-hidden="true">
+
+        <div class="userContainer">
+            <center><button type="button" class="btn btn-default" data-dismiss="modal" onclick="stopGame()"><i class="fa fa-times" ></i> Close</button></center>
+            <form>
+                <img src="http://orig04.deviantart.net/10fd/f/2016/171/c/a/gif__10__by_hintoncole-da6y8bz.gif" class="pharah" />
+
+                <img src="https://media.giphy.com/media/TiyO8vxfqQqrK/giphy.gif" alt="Cloud" class="cloud" />
+
+                <img src="http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-icons-media/003363-glossy-black-icon-media-media2-arrow-up.png"
+                    alt="Up" class="arrow upArrow" />
+
+                <img src="https://image.flaticon.com/icons/png/512/60/60995.png" alt="Down" class="arrow downArrow" />
+
+                <div class="full" onmousemove="changePharah(event)"></div>
+
+                <button class="start" onclick="startGame()">Start!</button>
+
+                <button class="stop" onclick="stopGame()">Pause</button>
+
+                <h1 class="display">Score</h1>
+                <br><br>
+                <p class="score"> :</p>
+
+
+
+            </form>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
